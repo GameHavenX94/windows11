@@ -22,3 +22,5 @@
 Or Contact for help**
 
 **R_Editrr [YouTube Channel](https://youtube.com/@r_editr?si=oQLye4RDC7rjRNqr)**
+
+**R_Editrr [Telegram Channel](https://t.me/join_Random_editrr)**
