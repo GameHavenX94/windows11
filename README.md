@@ -18,7 +18,7 @@
 
 # ➡️ Contact
 
-**Report issue [GitHub issues]()
+**Report issue [GitHub issues](https://github.com/GameHavenX94/windows11/issues)
 Or Contact for help**
 
 **R_Editrr [YouTube Channel](https://youtube.com/@r_editr?si=oQLye4RDC7rjRNqr)**
