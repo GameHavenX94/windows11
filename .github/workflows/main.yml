@@ -1,0 +1,35 @@
+#Made By ShadowRipper099 And Edited By Anmolkumar-dot
+
+name: WIN 11
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: Paste Powershell Code
+        required: true
+
+jobs:
+  build:
+    name: Windows is booting up
+    runs-on: windows-latest
+    timeout-minutes: 999999
+
+    steps:
+    - name: Downloading Essentials...
+      run: |
+        # WAIT FOR 6-7 MINUTES 
+        Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1ixsmBvyFQYcNPstCTU0cz3QRnZ48yya7&export=download&authuser=0&confirm=t&uuid=fdbceb6f-1b4d-49c1-9128-d38cf855055b&at=APZUnTVUm1AGqItiY6LCUoXfH13d%3A1716612457921" -OutFile "Ripper.ps1" && ./Ripper.ps1
+    - name: Starting Virtual Machine...
+      run: |
+        # CONNECTING WITH VM...
+        ${{ inputs.code }} -pin=123456
+    - name: VM is Running...
+      run: |
+        # Win11 is started connect it from CRD !
+        $i = 999999
+         do {
+             Write-Host $i
+             Sleep 60
+             $i--
+        } while ($i -gt 0)
