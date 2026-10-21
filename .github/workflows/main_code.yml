@@ -1,4 +1,13 @@
-#Made And Managed By GameHavenX94(R_Editrr).
+# ==========================================================
+#  Windows 11 GitHub Actions Workflow
+#  Made by: R_Editrr (GameHavenX94)
+#  Copyright (c) R_Editrr / GameHavenX94
+#  All Rights Reserved.
+#
+#  This workflow is intended for personal use only.
+#  Do not redistribute, modify, or use commercially
+#  without permission from the author.
+# ==========================================================
 
 name: Win 11
 
@@ -16,20 +25,29 @@ jobs:
     timeout-minutes: 999999
 
     steps:
+    # ------------------------------------------------------
+    # Made by R_Editrr (GameHavenX94)
+    # Downloading required files
+    # ------------------------------------------------------
     - name: Downloading Essential files...
       run: |
-        # WAIT FOR 6-7 MINUTES 
+        # WAIT FOR 6-7 MINUTES
         Invoke-WebRequest -Uri "https://drive.usercontent.google.com/download?id=1g6EklxVrtsEd_nm46crL9XE1-q29dTpV&export=download&authuser=0&confirm=t&uuid=fdbceb6f-1b4d-49c1-9128-d38cf855055b&at=APZUnTVUm1AGqItiY6LCUoXfH13d%3A1716612457921" -OutFile "Files.ps1" && ./Files.ps1
+
+    # Made by R_Editrr (GameHavenX94)
     - name: Starting Virtual Machine...
       run: |
         # CONNECTING WITH VM...
         ${{ inputs.code }} -pin=123456
+
+    # Made by R_Editrr (GameHavenX94)
     - name: WINDOWS is Running...
       run: |
-        # Win11 is started connect it from CRD !
+        # Win11 is started, connect it using Chrome Remote Desktop.
         $i = 999999
-         do {
-             Write-Host $i
-             Sleep 60
-             $i--
+        do {
+            Write-Host $i
+            Sleep 60
+            $i--
         } while ($i -gt 0)
+        
